@@ -32,20 +32,20 @@ namespace eLibrary_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAssesion = new System.Windows.Forms.TextBox();
+            this.txtPub = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSubArea = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAuthor = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dtrD = new MetroFramework.Controls.MetroDateTime();
+            this.txtddcNo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPageNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -87,25 +87,25 @@ namespace eLibrary_System
             this.label2.Text = "Assesion No.";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtAssesion
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(110, 84);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 26);
-            this.textBox1.TabIndex = 2;
+            this.txtAssesion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAssesion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssesion.Location = new System.Drawing.Point(110, 84);
+            this.txtAssesion.Multiline = true;
+            this.txtAssesion.Name = "txtAssesion";
+            this.txtAssesion.Size = new System.Drawing.Size(187, 26);
+            this.txtAssesion.TabIndex = 2;
             // 
-            // textBox2
+            // txtPub
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(110, 132);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 26);
-            this.textBox2.TabIndex = 4;
+            this.txtPub.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPub.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPub.Location = new System.Drawing.Point(110, 132);
+            this.txtPub.Multiline = true;
+            this.txtPub.Name = "txtPub";
+            this.txtPub.Size = new System.Drawing.Size(187, 26);
+            this.txtPub.TabIndex = 4;
             // 
             // label3
             // 
@@ -116,15 +116,15 @@ namespace eLibrary_System
             this.label3.TabIndex = 3;
             this.label3.Text = "PUBLICATION:";
             // 
-            // textBox3
+            // txtSubArea
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(414, 187);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 26);
-            this.textBox3.TabIndex = 6;
+            this.txtSubArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSubArea.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubArea.Location = new System.Drawing.Point(414, 187);
+            this.txtSubArea.Multiline = true;
+            this.txtSubArea.Name = "txtSubArea";
+            this.txtSubArea.Size = new System.Drawing.Size(187, 26);
+            this.txtSubArea.TabIndex = 6;
             // 
             // label4
             // 
@@ -135,15 +135,15 @@ namespace eLibrary_System
             this.label4.TabIndex = 5;
             this.label4.Text = "SUBJRCT AREA:";
             // 
-            // textBox4
+            // txtAuthor
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(110, 187);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 26);
-            this.textBox4.TabIndex = 8;
+            this.txtAuthor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAuthor.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAuthor.Location = new System.Drawing.Point(110, 187);
+            this.txtAuthor.Multiline = true;
+            this.txtAuthor.Name = "txtAuthor";
+            this.txtAuthor.Size = new System.Drawing.Size(187, 26);
+            this.txtAuthor.TabIndex = 8;
             // 
             // label5
             // 
@@ -163,23 +163,23 @@ namespace eLibrary_System
             this.label6.TabIndex = 9;
             this.label6.Text = "DATE RELEASE:";
             // 
-            // metroDateTime1
+            // dtrD
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(414, 132);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(187, 29);
-            this.metroDateTime1.TabIndex = 10;
+            this.dtrD.Location = new System.Drawing.Point(414, 132);
+            this.dtrD.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dtrD.Name = "dtrD";
+            this.dtrD.Size = new System.Drawing.Size(187, 29);
+            this.dtrD.TabIndex = 10;
             // 
-            // textBox5
+            // txtddcNo
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(414, 245);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(187, 26);
-            this.textBox5.TabIndex = 14;
+            this.txtddcNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtddcNo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtddcNo.Location = new System.Drawing.Point(414, 245);
+            this.txtddcNo.Multiline = true;
+            this.txtddcNo.Name = "txtddcNo";
+            this.txtddcNo.Size = new System.Drawing.Size(187, 26);
+            this.txtddcNo.TabIndex = 14;
             // 
             // label7
             // 
@@ -190,15 +190,15 @@ namespace eLibrary_System
             this.label7.TabIndex = 13;
             this.label7.Text = "DDC No:";
             // 
-            // textBox6
+            // txtPageNum
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(110, 252);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 26);
-            this.textBox6.TabIndex = 12;
+            this.txtPageNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPageNum.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPageNum.Location = new System.Drawing.Point(110, 252);
+            this.txtPageNum.Multiline = true;
+            this.txtPageNum.Name = "txtPageNum";
+            this.txtPageNum.Size = new System.Drawing.Size(187, 26);
+            this.txtPageNum.TabIndex = 12;
             // 
             // label8
             // 
@@ -209,15 +209,15 @@ namespace eLibrary_System
             this.label8.TabIndex = 11;
             this.label8.Text = "No PAGE:";
             // 
-            // textBox7
+            // txtTitle
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(414, 83);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(187, 26);
-            this.textBox7.TabIndex = 16;
+            this.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTitle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.Location = new System.Drawing.Point(414, 83);
+            this.txtTitle.Multiline = true;
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(187, 26);
+            this.txtTitle.TabIndex = 16;
             // 
             // label9
             // 
@@ -241,10 +241,12 @@ namespace eLibrary_System
             this.button1.TabIndex = 17;
             this.button1.Text = "SAVE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.button2.Enabled = false;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -279,21 +281,21 @@ namespace eLibrary_System
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtddcNo);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtPageNum);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.metroDateTime1);
+            this.Controls.Add(this.dtrD);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtAuthor);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtSubArea);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPub);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAssesion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -313,20 +315,20 @@ namespace eLibrary_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAssesion;
+        private System.Windows.Forms.TextBox txtPub;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSubArea;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
-        private System.Windows.Forms.TextBox textBox5;
+        private MetroFramework.Controls.MetroDateTime dtrD;
+        private System.Windows.Forms.TextBox txtddcNo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPageNum;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

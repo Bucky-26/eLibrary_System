@@ -37,6 +37,7 @@ namespace eLibrary_System
             newBooks.TopLevel = false;
             newBooks.BringToFront();
             this.pnl_body.Controls.Add(newBooks);
+            newBooks.loadBooks();
             newBooks.Show();
         }
 

@@ -1,0 +1,1 @@
+Data Source=1SOY\SQLEXPRESS;Initial Catalog=eLibraryDB;Integrated Security=True

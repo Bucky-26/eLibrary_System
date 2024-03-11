@@ -68,6 +68,12 @@
     <Compile Include="books.Designer.cs">
       <DependentUpon>books.cs</DependentUpon>
     </Compile>
+    <Compile Include="crud.cs" />
+    <Compile Include="eLibraryDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eLibraryDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="eLibraryDBDataSet.xsc">
+      <DependentUpon>eLibraryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="eLibraryDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eLibraryDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eLibraryDBDataSet.xss">
+      <DependentUpon>eLibraryDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
