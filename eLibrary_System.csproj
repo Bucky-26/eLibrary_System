@@ -134,6 +134,12 @@
     <Compile Include="frm_Unreturn.Designer.cs">
       <DependentUpon>frm_Unreturn.cs</DependentUpon>
     </Compile>
+    <Compile Include="memb3rs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memb3rs.Designer.cs">
+      <DependentUpon>memb3rs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="books.resx">
@@ -169,6 +175,9 @@
     <EmbeddedResource Include="frm_Unreturn.resx">
       <DependentUpon>frm_Unreturn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="memb3rs.resx">
+      <DependentUpon>memb3rs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -188,6 +197,9 @@
     </None>
     <None Include="eLibraryDBDataSet.xss">
       <DependentUpon>eLibraryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include=".cd">
+      <SubType>Form</SubType>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
