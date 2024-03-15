@@ -19,11 +19,10 @@ namespace eLibrary_System
 
         private void frm_home_Resize(object sender, EventArgs e)
         {
-          this.Height =  Screen.PrimaryScreen.Bounds.Height - 40;
+          this.Height =  Screen.PrimaryScreen.Bounds.Height-40 ;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Top = 0;
             this.Left = 0;
-            MessageBox.Show(this.Height.ToString() + this.Width.ToString());
         }
 
         private void frm_home_Load(object sender, EventArgs e)
@@ -37,7 +36,6 @@ namespace eLibrary_System
             newBooks.TopLevel = false;
             newBooks.BringToFront();
             this.pnl_body.Controls.Add(newBooks);
-            newBooks.loadBooks();
             newBooks.Show();
         }
 
@@ -72,6 +70,11 @@ namespace eLibrary_System
             newDashboard.BringToFront();
             this.pnl_body.Controls.Add(newDashboard);
             newDashboard.Show();
+        }
+
+        private void pnl_body_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -31,5 +31,11 @@ namespace eLibrary_System
         {
             this.Dispose();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FrmAddborrowBook newFrom = new FrmAddborrowBook();
+            newFrom.ShowDialog();
+        }
     }
 }

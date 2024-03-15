@@ -21,5 +21,16 @@ namespace eLibrary_System
         {
             this.Dispose();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            memb3rs newForm = new memb3rs();
+            newForm.ShowDialog();
+        }
     }
 }

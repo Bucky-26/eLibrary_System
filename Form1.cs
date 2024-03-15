@@ -14,6 +14,8 @@ namespace eLibrary_System
     {
         public Form1()
         {
+            splashScreen newScreen = new splashScreen();
+            newScreen.Dispose();
             InitializeComponent();
         }
 
@@ -27,6 +29,11 @@ namespace eLibrary_System
             frm_home newHome = new frm_home();
             this.Hide();
             newHome.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
