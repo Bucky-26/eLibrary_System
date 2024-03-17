@@ -47,5 +47,36 @@ C:\Users\Admin\Documents\GitHub\eLibrary_System\obj\Debug\eLibrary_System.csproj
 C:\Users\Admin\Documents\GitHub\eLibrary_System\obj\Debug\eLibrary_System.exe
 C:\Users\Admin\Documents\GitHub\eLibrary_System\obj\Debug\eLibrary_System.pdb
 C:\Users\Admin\Documents\GitHub\eLibrary_System\obj\Debug\eLibrary_System.memb3rs.resources
+<<<<<<< Updated upstream
 C:\Users\Admin\Documents\GitHub\eLibrary_System\obj\Debug\eLibrary_System.splashScreen.resources
 C:\Users\Admin\Documents\GitHub\eLibrary_System\obj\Debug\eLibrary_System.FrmAddborrowBook.resources
+=======
+I:\eLibrary_System\bin\Debug\eLibrary_System.exe.config
+I:\eLibrary_System\bin\Debug\eLibrary_System.exe
+I:\eLibrary_System\bin\Debug\eLibrary_System.pdb
+I:\eLibrary_System\bin\Debug\MetroFramework.Design.dll
+I:\eLibrary_System\bin\Debug\MetroFramework.dll
+I:\eLibrary_System\bin\Debug\MetroFramework.Fonts.dll
+I:\eLibrary_System\obj\Debug\eLibrary_System.csproj.AssemblyReference.cache
+I:\eLibrary_System\obj\Debug\eLibrary_System.books.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.Form1.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.Form2.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frmAccounts.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frmDashboard.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frmReturn.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frm_addBooks.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frm_borrowBooks.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frm_home.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frm_members.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frm_overDue.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.memb3rs.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.Properties.Resources.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.csproj.GenerateResource.cache
+I:\eLibrary_System\obj\Debug\eLibrary_System.csproj.CoreCompileInputs.cache
+I:\eLibrary_System\obj\Debug\eLibrary_System.csproj.CopyComplete
+I:\eLibrary_System\obj\Debug\eLibrary_System.exe
+I:\eLibrary_System\obj\Debug\eLibrary_System.pdb
+>>>>>>> Stashed changes
+I:\eLibrary_System\obj\Debug\eLibrary_System.FrmAddborrowBook.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.splashScreen.resources
+I:\eLibrary_System\obj\Debug\eLibrary.8A8AB59F.Up2Date
