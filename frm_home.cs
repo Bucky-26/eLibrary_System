@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
+    
 namespace eLibrary_System
 {
     public partial class frm_home : Form
@@ -16,6 +17,7 @@ namespace eLibrary_System
         {
             InitializeComponent();
         }
+
 
         private void frm_home_Resize(object sender, EventArgs e)
         {
@@ -32,9 +34,10 @@ namespace eLibrary_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-            books newBooks = new books();
+                books newBooks = new books();
             newBooks.TopLevel = false;
             newBooks.BringToFront();
+            newBooks.loadBooks();
             this.pnl_body.Controls.Add(newBooks);
             newBooks.Show();
         }
@@ -46,6 +49,7 @@ namespace eLibrary_System
             newMember.TopLevel = false;
             newMember.BringToFront();
             this.pnl_body.Controls.Add(newMember);
+            newMember.loadMembers();
             newMember.Show();
                 }
 
@@ -73,6 +77,31 @@ namespace eLibrary_System
         }
 
         private void pnl_body_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frmAccounts newForm = new frmAccounts();
+            newForm.TopLevel = false;
+            newForm.BringToFront();
+            this.pnl_body.Controls.Add(newForm);
+            newForm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            profile f = new profile();
+            f.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

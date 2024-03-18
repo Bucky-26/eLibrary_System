@@ -39,20 +39,25 @@ namespace eLibrary_System
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.round1 = new eLibrary_System.round();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.round2 = new eLibrary_System.round();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnl_body = new System.Windows.Forms.Panel();
             this.pnl_nav.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.round2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_nav
             // 
-            this.pnl_nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.pnl_nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.pnl_nav.Controls.Add(this.button7);
             this.pnl_nav.Controls.Add(this.button5);
             this.pnl_nav.Controls.Add(this.button6);
@@ -85,6 +90,7 @@ namespace eLibrary_System
             this.button7.Text = "           Manage Accounts";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -143,6 +149,7 @@ namespace eLibrary_System
             this.button3.Text = "           Return Books";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -206,16 +213,26 @@ namespace eLibrary_System
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.round1);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(262, 175);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // round1
+            // 
+            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
+            this.round1.Location = new System.Drawing.Point(15, 36);
+            this.round1.Name = "round1";
+            this.round1.Size = new System.Drawing.Size(100, 100);
+            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.round1.TabIndex = 4;
+            this.round1.TabStop = false;
             // 
             // label3
             // 
@@ -235,7 +252,7 @@ namespace eLibrary_System
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(121, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 16);
+            this.label2.Size = new System.Drawing.Size(93, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "USERNAME";
             // 
@@ -249,29 +266,60 @@ namespace eLibrary_System
             this.label1.Size = new System.Drawing.Size(89, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "eLIMS";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 47);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(102, 85);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.round2);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(262, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(740, 100);
+            this.panel1.Size = new System.Drawing.Size(740, 86);
             this.panel1.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(453, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(184, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Palawan National School";
+            // 
+            // round2
+            // 
+            this.round2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.round2.Image = ((System.Drawing.Image)(resources.GetObject("round2.Image")));
+            this.round2.Location = new System.Drawing.Point(633, 0);
+            this.round2.Name = "round2";
+            this.round2.Size = new System.Drawing.Size(86, 86);
+            this.round2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.round2.TabIndex = 1;
+            this.round2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(281, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(356, 28);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "eLibrary Management System";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pnl_body
             // 
             this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_body.Location = new System.Drawing.Point(262, 100);
+            this.pnl_body.Location = new System.Drawing.Point(262, 86);
             this.pnl_body.Name = "pnl_body";
-            this.pnl_body.Size = new System.Drawing.Size(740, 455);
+            this.pnl_body.Size = new System.Drawing.Size(740, 469);
             this.pnl_body.TabIndex = 2;
             this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
             // 
@@ -289,7 +337,10 @@ namespace eLibrary_System
             this.pnl_nav.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.round1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.round2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,7 +360,10 @@ namespace eLibrary_System
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
+        private round round1;
+        private round round2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

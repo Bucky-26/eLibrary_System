@@ -80,3 +80,5 @@ I:\eLibrary_System\obj\Debug\eLibrary_System.pdb
 I:\eLibrary_System\obj\Debug\eLibrary_System.FrmAddborrowBook.resources
 I:\eLibrary_System\obj\Debug\eLibrary_System.splashScreen.resources
 I:\eLibrary_System\obj\Debug\eLibrary.8A8AB59F.Up2Date
+I:\eLibrary_System\obj\Debug\eLibrary_System.profile.resources
+I:\eLibrary_System\obj\Debug\eLibrary_System.frmCreateAccount.resources

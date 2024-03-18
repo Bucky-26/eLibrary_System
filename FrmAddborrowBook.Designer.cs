@@ -136,7 +136,7 @@
             this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_top.Location = new System.Drawing.Point(0, 0);
             this.pnl_top.Name = "pnl_top";
-            this.pnl_top.Size = new System.Drawing.Size(953, 34);
+            this.pnl_top.Size = new System.Drawing.Size(1006, 34);
             this.pnl_top.TabIndex = 7;
             // 
             // CLOSE
@@ -145,7 +145,7 @@
             this.CLOSE.AutoSize = true;
             this.CLOSE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CLOSE.ForeColor = System.Drawing.Color.White;
-            this.CLOSE.Location = new System.Drawing.Point(876, 9);
+            this.CLOSE.Location = new System.Drawing.Point(929, 9);
             this.CLOSE.Name = "CLOSE";
             this.CLOSE.Size = new System.Drawing.Size(65, 18);
             this.CLOSE.TabIndex = 8;
@@ -255,7 +255,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(648, 94);
+            this.label10.Location = new System.Drawing.Point(682, 94);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(255, 27);
             this.label10.TabIndex = 18;
@@ -264,7 +264,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(658, 146);
+            this.label11.Location = new System.Drawing.Point(692, 146);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 15);
@@ -273,14 +273,14 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(658, 165);
+            this.dateTimePicker1.Location = new System.Drawing.Point(692, 165);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 20;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(658, 219);
+            this.dateTimePicker2.Location = new System.Drawing.Point(692, 219);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker2.TabIndex = 22;
@@ -288,7 +288,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(658, 200);
+            this.label12.Location = new System.Drawing.Point(692, 200);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 15);
@@ -302,7 +302,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(640, 325);
+            this.button2.Location = new System.Drawing.Point(674, 325);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 38);
             this.button2.TabIndex = 23;
@@ -316,7 +316,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(756, 325);
+            this.button3.Location = new System.Drawing.Point(790, 325);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 38);
             this.button3.TabIndex = 24;
@@ -327,7 +327,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 472);
+            this.ClientSize = new System.Drawing.Size(1006, 472);
             this.ControlBox = false;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

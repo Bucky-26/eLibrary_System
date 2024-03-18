@@ -77,6 +77,7 @@ namespace eLibrary_System
         {
             
         }
+      
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -96,6 +97,17 @@ namespace eLibrary_System
             {
                 MessageBox.Show("Please enter a valid number for the page count.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        
+        private void frm_addBooks_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ClearTextBoxes();
+
         }
     }
 }

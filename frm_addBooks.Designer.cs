@@ -271,6 +271,7 @@ namespace eLibrary_System
             this.button3.TabIndex = 19;
             this.button3.Text = "CLEAR";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frm_addBooks
             // 
@@ -303,6 +304,7 @@ namespace eLibrary_System
             this.Name = "frm_addBooks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADD BOOKS";
+            this.Load += new System.EventHandler(this.frm_addBooks_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

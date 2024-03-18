@@ -21,5 +21,16 @@ namespace eLibrary_System
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void frmAcc_btnCreateAcc_Click(object sender, EventArgs e)
+        {
+            frmCreateAccount newForm = new frmCreateAccount();
+            newForm.ShowDialog();
+        }
     }
 }
