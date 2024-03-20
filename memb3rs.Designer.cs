@@ -55,11 +55,11 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.cmboxGender = new System.Windows.Forms.ComboBox();
-            this.round1 = new eLibrary_System.round();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.imgboxStudent = new eLibrary_System.round();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgboxStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -312,12 +312,12 @@
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(65)))), ((int)(((byte)(24)))));
-            this.btnClear.Enabled = false;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,6 +329,7 @@
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label12
             // 
@@ -357,16 +358,6 @@
             this.cmboxGender.Size = new System.Drawing.Size(213, 23);
             this.cmboxGender.TabIndex = 25;
             // 
-            // round1
-            // 
-            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
-            this.round1.Location = new System.Drawing.Point(360, 91);
-            this.round1.Name = "round1";
-            this.round1.Size = new System.Drawing.Size(154, 124);
-            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.round1.TabIndex = 26;
-            this.round1.TabStop = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -387,6 +378,17 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // imgboxStudent
+            // 
+            this.imgboxStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imgboxStudent.Image = ((System.Drawing.Image)(resources.GetObject("imgboxStudent.Image")));
+            this.imgboxStudent.Location = new System.Drawing.Point(360, 91);
+            this.imgboxStudent.Name = "imgboxStudent";
+            this.imgboxStudent.Size = new System.Drawing.Size(154, 124);
+            this.imgboxStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgboxStudent.TabIndex = 26;
+            this.imgboxStudent.TabStop = false;
+            // 
             // memb3rs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -395,7 +397,7 @@
             this.ClientSize = new System.Drawing.Size(926, 656);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.round1);
+            this.Controls.Add(this.imgboxStudent);
             this.Controls.Add(this.cmboxGender);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnClear);
@@ -426,9 +428,10 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "memb3rs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.memb3rs_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.round1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgboxStudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,31 +442,31 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtLCnumber;
-        private System.Windows.Forms.TextBox txtlcnum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtfname;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtaddress;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtcnum;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtgl;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtsec;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtadviser;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cmboxGender;
-        private round round1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.TextBox txtLCnumber;
+        public System.Windows.Forms.TextBox txtlcnum;
+        public System.Windows.Forms.TextBox txtfname;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.TextBox txtaddress;
+        public System.Windows.Forms.TextBox txtcnum;
+        public System.Windows.Forms.TextBox txtgl;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox txtsec;
+        public System.Windows.Forms.TextBox txtadviser;
+        public System.Windows.Forms.Button btnAdd;
+        public System.Windows.Forms.Button btnUpdate;
+        public System.Windows.Forms.Button btnClear;
+        public System.Windows.Forms.ComboBox cmboxGender;
+        public round imgboxStudent;
     }
-}
+}   

@@ -45,10 +45,10 @@ namespace eLibrary_System
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btn = new System.Windows.Forms.Button();
             this.round1 = new eLibrary_System.round();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
             this.SuspendLayout();
@@ -336,17 +336,6 @@ namespace eLibrary_System
             this.panel1.Size = new System.Drawing.Size(413, 412);
             this.panel1.TabIndex = 20;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(83, 304);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 58);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "             eLibrary\r\nManagement System";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -357,6 +346,27 @@ namespace eLibrary_System
             this.label9.Size = new System.Drawing.Size(257, 29);
             this.label9.TabIndex = 2;
             this.label9.Text = "Palawan National School";
+            // 
+            // round1
+            // 
+            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
+            this.round1.Location = new System.Drawing.Point(120, 83);
+            this.round1.Name = "round1";
+            this.round1.Size = new System.Drawing.Size(150, 128);
+            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.round1.TabIndex = 1;
+            this.round1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(83, 304);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 58);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "             eLibrary\r\nManagement System";
             // 
             // btn
             // 
@@ -371,16 +381,7 @@ namespace eLibrary_System
             this.btn.TabIndex = 21;
             this.btn.Text = "Register";
             this.btn.UseVisualStyleBackColor = false;
-            // 
-            // round1
-            // 
-            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
-            this.round1.Location = new System.Drawing.Point(120, 83);
-            this.round1.Name = "round1";
-            this.round1.Size = new System.Drawing.Size(150, 128);
-            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.round1.TabIndex = 1;
-            this.round1.TabStop = false;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // frmCreateAccount
             // 

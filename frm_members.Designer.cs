@@ -36,8 +36,7 @@ namespace eLibrary_System
             this.button4 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgviewStudents = new System.Windows.Forms.DataGridView();
             this.ass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,12 +44,11 @@ namespace eLibrary_System
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PAGES = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgviewStudents)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,19 +101,16 @@ namespace eLibrary_System
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dgviewStudents
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dgviewStudents.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CausesValidation = false;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgviewStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgviewStudents.BackgroundColor = System.Drawing.Color.White;
+            this.dgviewStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgviewStudents.CausesValidation = false;
+            this.dgviewStudents.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgviewStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,11 +118,10 @@ namespace eLibrary_System
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeight = 30;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
+            this.dgviewStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgviewStudents.ColumnHeadersHeight = 30;
+            this.dgviewStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgviewStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ass,
             this.Title,
             this.Column1,
@@ -135,110 +129,105 @@ namespace eLibrary_System
             this.Column3,
             this.Column4,
             this.PAGES,
-            this.Column5,
             this.edit,
             this.delete});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(933, 444);
-            this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // id
-            // 
-            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.id.Visible = false;
-            this.id.Width = 23;
+            this.dgviewStudents.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgviewStudents.EnableHeadersVisualStyles = false;
+            this.dgviewStudents.Location = new System.Drawing.Point(0, 75);
+            this.dgviewStudents.Name = "dgviewStudents";
+            this.dgviewStudents.ReadOnly = true;
+            this.dgviewStudents.RowHeadersVisible = false;
+            this.dgviewStudents.RowTemplate.Height = 30;
+            this.dgviewStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgviewStudents.Size = new System.Drawing.Size(933, 444);
+            this.dgviewStudents.TabIndex = 5;
+            this.dgviewStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgviewStudents_CellContentClick_1);
             // 
             // ass
             // 
             this.ass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ass.HeaderText = "LC No.";
+            this.ass.HeaderText = "LC NUMBER";
             this.ass.Name = "ass";
+            this.ass.ReadOnly = true;
             this.ass.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ass.Width = 44;
+            this.ass.Width = 73;
             // 
             // Title
             // 
             this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Title.HeaderText = "LRN No.";
+            this.Title.HeaderText = "LRN";
             this.Title.Name = "Title";
+            this.Title.ReadOnly = true;
             this.Title.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Title.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "LC No.";
+            this.Column1.HeaderText = "FULLNAME";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 44;
+            this.Column1.Width = 67;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "FULLNAME";
+            this.Column2.HeaderText = "ADDRESS";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column2.Width = 67;
+            this.Column2.Width = 59;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column3.HeaderText = "ADDRESS";
+            this.Column3.HeaderText = "CONTACT NUMBER";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column3.Width = 59;
+            this.Column3.Width = 110;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "CONTACT NO.";
+            this.Column4.HeaderText = "GRADE";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column4.Width = 83;
+            this.Column4.Width = 47;
             // 
             // PAGES
             // 
             this.PAGES.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.PAGES.HeaderText = "GRADE";
+            this.PAGES.HeaderText = "SECTION/BLOCK";
             this.PAGES.Name = "PAGES";
+            this.PAGES.ReadOnly = true;
             this.PAGES.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.PAGES.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.PAGES.Width = 47;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "SECTION/BLOCK";
-            this.Column5.Name = "Column5";
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column5.Width = 97;
+            this.PAGES.Width = 97;
             // 
             // edit
             // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.edit.HeaderText = "";
             this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
             this.edit.Name = "edit";
+            this.edit.ReadOnly = true;
+            this.edit.Width = 5;
             // 
             // delete
             // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.delete.HeaderText = "";
             this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
             this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Width = 5;
             // 
             // frm_members
             // 
@@ -246,7 +235,7 @@ namespace eLibrary_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 519);
             this.ControlBox = false;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgviewStudents);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -256,7 +245,7 @@ namespace eLibrary_System
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgviewStudents)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,8 +256,7 @@ namespace eLibrary_System
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridView dgviewStudents;
         private System.Windows.Forms.DataGridViewTextBoxColumn ass;
         private System.Windows.Forms.DataGridViewTextBoxColumn Title;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -276,7 +264,6 @@ namespace eLibrary_System
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn PAGES;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
     }

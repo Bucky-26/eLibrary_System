@@ -37,5 +37,10 @@ namespace eLibrary_System
             FrmAddborrowBook newFrom = new FrmAddborrowBook();
             newFrom.ShowDialog();
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

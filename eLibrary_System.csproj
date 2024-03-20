@@ -71,6 +71,12 @@
     <Compile Include="Class1.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Class2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class3.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="crud.cs" />
     <Compile Include="custoeTextbox.cs">
       <SubType>Component</SubType>

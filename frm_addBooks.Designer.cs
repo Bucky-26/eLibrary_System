@@ -48,7 +48,7 @@ namespace eLibrary_System
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -243,20 +243,21 @@ namespace eLibrary_System
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.button2.Enabled = false;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(373, 322);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 32);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnUpdate.Enabled = false;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(373, 322);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(111, 32);
+            this.btnUpdate.TabIndex = 18;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // button3
             // 
@@ -280,7 +281,7 @@ namespace eLibrary_System
             this.ClientSize = new System.Drawing.Size(643, 381);
             this.ControlBox = false;
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label9);
@@ -317,23 +318,23 @@ namespace eLibrary_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAssesion;
-        private System.Windows.Forms.TextBox txtPub;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSubArea;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private MetroFramework.Controls.MetroDateTime dtrD;
-        private System.Windows.Forms.TextBox txtddcNo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtPageNum;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.TextBox txtAssesion;
+        public System.Windows.Forms.TextBox txtPub;
+        public System.Windows.Forms.TextBox txtSubArea;
+        public System.Windows.Forms.TextBox txtAuthor;
+        public MetroFramework.Controls.MetroDateTime dtrD;
+        public System.Windows.Forms.TextBox txtddcNo;
+        public System.Windows.Forms.TextBox txtPageNum;
+        public System.Windows.Forms.TextBox txtTitle;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnUpdate;
+        public System.Windows.Forms.Button button3;
     }
 }

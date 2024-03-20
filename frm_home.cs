@@ -105,5 +105,13 @@ namespace eLibrary_System
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form1 newLogin = new Form1();
+            this.Close();
+            newLogin.Show();
+
+        }
     }
 }
