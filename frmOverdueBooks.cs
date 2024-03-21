@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace eLibrary_System
 {
-    public partial class frmDashboard : Form
+    public partial class frmOverdueBooks : Form
     {
-        public frmDashboard()
+        public frmOverdueBooks()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

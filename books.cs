@@ -114,7 +114,7 @@ namespace eLibrary_System
             {
                 con.Open();
                 com = new SqlCommand("DELETE FROM BOOKS WHERE ASESSION_NUM=@ASSESION", con);
-                com.Parameters.Add("@ASSESION", asession);
+                com.Parameters.AddWithValue("@ASSESION", asession);
                 com.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Book record deleted successfully.", "eLibrary System", MessageBoxButtons.OK, MessageBoxIcon.Information);

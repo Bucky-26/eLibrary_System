@@ -49,6 +49,7 @@ namespace eLibrary_System
             this.round1 = new eLibrary_System.round();
             this.label1 = new System.Windows.Forms.Label();
             this.btn = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
             this.SuspendLayout();
@@ -383,12 +384,24 @@ namespace eLibrary_System
             this.btn.UseVisualStyleBackColor = false;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(906, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 29);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "X";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // frmCreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 412);
             this.ControlBox = false;
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
@@ -438,5 +451,6 @@ namespace eLibrary_System
         private System.Windows.Forms.Label label9;
         private round round1;
         private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Label label11;
     }
 }

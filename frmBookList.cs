@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace eLibrary_System
 {
-    public partial class frmDashboard : Form
+    public partial class frmBookList : Form
     {
-        public frmDashboard()
+        public frmBookList()
         {
             InitializeComponent();
         }
@@ -20,11 +20,6 @@ namespace eLibrary_System
         private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

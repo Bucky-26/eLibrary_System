@@ -176,7 +176,7 @@ namespace eLibrary_System
                 }
             }catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
 

@@ -16,5 +16,35 @@ namespace eLibrary_System
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

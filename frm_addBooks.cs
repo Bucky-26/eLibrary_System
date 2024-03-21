@@ -43,7 +43,7 @@ namespace eLibrary_System
                 string sql = @"INSERT INTO BOOKS (ASESSION_NUM, TITLE, AUTHOR, RELEASE_DATE, DDC_NUM, PUBLICATION, SUBJECT_AREA, PAGES, LOCATION)
                        VALUES (@ASESSION_NUM, @TITLE, @AUTHOR, @RELEASE_DATE, @DDC_NUM, @PUBLICATION, @SUBAREA, @PAGES, @LOCATION)";
 
-                SqlCommand com = new SqlCommand(sql, con);
+                 com = new SqlCommand(sql, con);
                 com.Parameters.AddWithValue("@ASESSION_NUM", ASESSION_NUM);
                 com.Parameters.AddWithValue("@TITLE", title);
                 com.Parameters.AddWithValue("@AUTHOR", author);

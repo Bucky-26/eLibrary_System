@@ -30,120 +30,20 @@ namespace eLibrary_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.roundButton1 = new RoundButton();
-            this.roundedPanel2 = new RoundedPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.roundedPanel1 = new RoundedPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textbox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.textbox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptnLoginbtn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.round1 = new eLibrary_System.round();
-            this.label6 = new System.Windows.Forms.Label();
-            this.roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.AutoSize = true;
-            this.roundButton1.BackColor = System.Drawing.Color.White;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.roundButton1.Location = new System.Drawing.Point(508, 309);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(388, 38);
-            this.roundButton1.TabIndex = 6;
-            this.roundButton1.Text = "Login";
-            this.roundButton1.UseVisualStyleBackColor = false;
-            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
-            // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.Controls.Add(this.pictureBox2);
-            this.roundedPanel2.Controls.Add(this.textBox2);
-            this.roundedPanel2.CornerRadius = 20;
-            this.roundedPanel2.Location = new System.Drawing.Point(508, 249);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(388, 38);
-            this.roundedPanel2.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(50, 8);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(325, 23);
-            this.textBox2.TabIndex = 1;
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.Controls.Add(this.pictureBox1);
-            this.roundedPanel1.Controls.Add(this.textBox1);
-            this.roundedPanel1.CornerRadius = 20;
-            this.roundedPanel1.Location = new System.Drawing.Point(508, 186);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(388, 38);
-            this.roundedPanel1.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(50, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 23);
-            this.textBox1.TabIndex = 1;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(-71, -6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1036, 509);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
             // 
             // label1
             // 
@@ -151,7 +51,7 @@ namespace eLibrary_System
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(629, 119);
+            this.label1.Location = new System.Drawing.Point(626, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 40);
             this.label1.TabIndex = 8;
@@ -163,7 +63,7 @@ namespace eLibrary_System
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(602, 151);
+            this.label2.Location = new System.Drawing.Point(600, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 21);
             this.label2.TabIndex = 9;
@@ -173,17 +73,19 @@ namespace eLibrary_System
             // 
             this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(640, 369);
+            this.linkLabel1.Location = new System.Drawing.Point(627, 348);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(125, 19);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot Password?";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.label3.Location = new System.Drawing.Point(38, 193);
@@ -196,6 +98,7 @@ namespace eLibrary_System
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
@@ -209,69 +112,133 @@ namespace eLibrary_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.label5.Location = new System.Drawing.Point(76, 27);
+            this.label5.Location = new System.Drawing.Point(86, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(227, 15);
+            this.label5.Size = new System.Drawing.Size(284, 18);
             this.label5.TabIndex = 12;
             this.label5.Text = "eLIBRARY MANAGEMENT SYSTEM";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.label7.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(933, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(24, 27);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "X";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // textbox1
+            // 
+            this.textbox1.Location = new System.Drawing.Point(495, 172);
+            this.textbox1.Name = "textbox1";
+            this.textbox1.Size = new System.Drawing.Size(388, 35);
+            this.textbox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.textbox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.textbox1.StateCommon.Border.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Control;
+            this.textbox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textbox1.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.textbox1.StateCommon.Border.Rounding = 20;
+            this.textbox1.TabIndex = 16;
+            this.textbox1.WordWrap = false;
+            // 
+            // textbox2
+            // 
+            this.textbox2.Location = new System.Drawing.Point(495, 228);
+            this.textbox2.Name = "textbox2";
+            this.textbox2.Size = new System.Drawing.Size(388, 35);
+            this.textbox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.textbox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.textbox2.StateCommon.Border.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Control;
+            this.textbox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.textbox2.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.textbox2.StateCommon.Border.Rounding = 20;
+            this.textbox2.TabIndex = 17;
+            this.textbox2.WordWrap = false;
+            // 
+            // kryptnLoginbtn
+            // 
+            this.kryptnLoginbtn.Location = new System.Drawing.Point(533, 281);
+            this.kryptnLoginbtn.Name = "kryptnLoginbtn";
+            this.kryptnLoginbtn.Size = new System.Drawing.Size(312, 42);
+            this.kryptnLoginbtn.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptnLoginbtn.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptnLoginbtn.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptnLoginbtn.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptnLoginbtn.StateCommon.Border.Rounding = 20;
+            this.kryptnLoginbtn.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.kryptnLoginbtn.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.kryptnLoginbtn.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptnLoginbtn.TabIndex = 18;
+            this.kryptnLoginbtn.Values.Text = "Login";
+            this.kryptnLoginbtn.Click += new System.EventHandler(this.kryptnLoginbtn_Click);
+            // 
             // round1
             // 
+            this.round1.BackColor = System.Drawing.Color.White;
             this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
-            this.round1.Location = new System.Drawing.Point(12, 12);
+            this.round1.Location = new System.Drawing.Point(1, 1);
             this.round1.Name = "round1";
-            this.round1.Size = new System.Drawing.Size(64, 64);
+            this.round1.Size = new System.Drawing.Size(88, 75);
             this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.round1.TabIndex = 13;
+            this.round1.TabIndex = 19;
             this.round1.TabStop = false;
             // 
-            // label6
+            // label8
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.label6.Location = new System.Drawing.Point(79, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Palawan National School";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.label8.Location = new System.Drawing.Point(86, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(197, 17);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "PALAWAN NATIONAL SCHOOL";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 501);
             this.ControlBox = false;
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.round1);
+            this.Controls.Add(this.kryptnLoginbtn);
+            this.Controls.Add(this.textbox2);
+            this.Controls.Add(this.textbox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.roundButton1);
-            this.Controls.Add(this.roundedPanel2);
-            this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.pictureBox3);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_login";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.roundedPanel2.ResumeLayout(false);
-            this.roundedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.round1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -279,22 +246,19 @@ namespace eLibrary_System
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private RoundedPanel roundedPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private RoundedPanel roundedPanel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private RoundButton roundButton1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private round round1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox textbox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox textbox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptnLoginbtn;
+        private round round1;
+        private System.Windows.Forms.Label label8;
     }
 }
 

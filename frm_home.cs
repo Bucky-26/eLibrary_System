@@ -8,20 +8,103 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-    
+using System.Data.SqlClient;
 namespace eLibrary_System
 {
     public partial class frm_home : Form
     {
+
+
+        SqlConnection _cConnect;
+        SqlCommand _cCommand;
+        SqlDataReader _cReader;
         public frm_home()
         {
             InitializeComponent();
         }
+        private string _AccID;
+
+        public string _accID
+        {
+            get { return _AccID; }
+            set { _AccID = value; }
+        }
 
 
+        
+
+
+        public void navigation(string nav)
+        {
+            if (pnl_body.Controls.Count > 0)
+            {
+                pnl_body.Controls[0].Dispose();
+                pnl_body.Controls.Clear();
+            }
+            switch (nav)
+            {
+                case "dashboard":
+                    frmDashboard newDashboard = new frmDashboard();
+                    newDashboard.TopLevel = false;
+                    newDashboard.BringToFront();
+                    this.pnl_body.Controls.Add(newDashboard);
+                    newDashboard.Show();
+                    break;
+                case "books":
+                    books newBooks = new books();
+                    newBooks.TopLevel = false;
+                    newBooks.BringToFront();
+                    newBooks.loadBooks();
+                    this.pnl_body.Controls.Add(newBooks);
+                    newBooks.Show();
+
+
+                    break;
+                case "boroowBooks":
+
+                    frm_borrowBooks newBorrow = new frm_borrowBooks();
+                    newBorrow.TopLevel = false;
+                    newBorrow.BringToFront();
+                    this.pnl_body.Controls.Add(newBorrow);
+                    newBorrow.Show();
+                    break;
+                case "return":
+
+                    frmReturn newReturn = new frmReturn();
+                    newReturn.TopLevel = false;
+                    newReturn.BringToFront();
+                    this.pnl_body.Controls.Add(newReturn);
+                    newReturn.Show();
+                    break;
+                case "overDUE":
+
+                    break;
+                case "members":
+
+                    frm_members newMember = new frm_members();
+                    newMember.TopLevel = false;
+                    newMember.BringToFront();
+                    this.pnl_body.Controls.Add(newMember);
+                    newMember.loadMembers();
+                    newMember.Show();
+                    break;
+
+                case "accounts":
+                    frmAccounts newForm = new frmAccounts();
+                    newForm.TopLevel = false;
+                    newForm.BringToFront();
+                    this.pnl_body.Controls.Add(newForm);
+                    newForm.displayAccount();
+                    newForm.Show();
+                    break;
+
+
+
+            }
+        }
         private void frm_home_Resize(object sender, EventArgs e)
         {
-          this.Height =  Screen.PrimaryScreen.Bounds.Height-40 ;
+          this.Height =  Screen.PrimaryScreen.Bounds.Height- 45  ;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Top = 0;
             this.Left = 0;
@@ -30,36 +113,21 @@ namespace eLibrary_System
         private void frm_home_Load(object sender, EventArgs e)
         {
 
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-                books newBooks = new books();
-            newBooks.TopLevel = false;
-            newBooks.BringToFront();
-            newBooks.loadBooks();
-            this.pnl_body.Controls.Add(newBooks);
-            newBooks.Show();
-        }
+        
 
         private void button5_Click(object sender, EventArgs e)
         {
+            navigation("members");
 
-            frm_members newMember = new frm_members();
-            newMember.TopLevel = false;
-            newMember.BringToFront();
-            this.pnl_body.Controls.Add(newMember);
-            newMember.loadMembers();
-            newMember.Show();
+          
                 }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frm_borrowBooks newBorrow = new frm_borrowBooks();
-            newBorrow.TopLevel = false;
-            newBorrow.BringToFront();
-            this.pnl_body.Controls.Add(newBorrow);
-            newBorrow.Show();
+            navigation("boroowBooks");
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -69,11 +137,7 @@ namespace eLibrary_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmDashboard newDashboard = new frmDashboard();
-            newDashboard.TopLevel = false;
-            newDashboard.BringToFront();
-            this.pnl_body.Controls.Add(newDashboard);
-            newDashboard.Show();
+            navigation("dashboard");
         }
 
         private void pnl_body_Paint(object sender, PaintEventArgs e)
@@ -83,11 +147,7 @@ namespace eLibrary_System
 
         private void button7_Click(object sender, EventArgs e)
         {
-            frmAccounts newForm = new frmAccounts();
-            newForm.TopLevel = false;
-            newForm.BringToFront();
-            this.pnl_body.Controls.Add(newForm);
-            newForm.Show();
+            navigation("accounts");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -98,7 +158,7 @@ namespace eLibrary_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            navigation("return");
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -112,6 +172,16 @@ namespace eLibrary_System
             this.Close();
             newLogin.Show();
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBooks_Click(object sender, EventArgs e)
+        {
+            navigation("books");
         }
     }
 }

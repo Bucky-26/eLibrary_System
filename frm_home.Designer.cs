@@ -31,30 +31,30 @@ namespace eLibrary_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_home));
             this.pnl_nav = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBooks = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.round1 = new eLibrary_System.round();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.round2 = new eLibrary_System.round();
             this.label4 = new System.Windows.Forms.Label();
             this.pnl_body = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.round2 = new eLibrary_System.round();
-            this.round1 = new eLibrary_System.round();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pnl_nav.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.round2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_nav
@@ -66,7 +66,7 @@ namespace eLibrary_System
             this.pnl_nav.Controls.Add(this.button6);
             this.pnl_nav.Controls.Add(this.button3);
             this.pnl_nav.Controls.Add(this.button4);
-            this.pnl_nav.Controls.Add(this.button2);
+            this.pnl_nav.Controls.Add(this.btnBooks);
             this.pnl_nav.Controls.Add(this.button1);
             this.pnl_nav.Controls.Add(this.panel3);
             this.pnl_nav.Dock = System.Windows.Forms.DockStyle.Left;
@@ -74,6 +74,25 @@ namespace eLibrary_System
             this.pnl_nav.Name = "pnl_nav";
             this.pnl_nav.Size = new System.Drawing.Size(262, 555);
             this.pnl_nav.TabIndex = 0;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(0, 513);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.button8.Size = new System.Drawing.Size(262, 34);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "      Logout";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -133,6 +152,7 @@ namespace eLibrary_System
             this.button6.Text = "           Overdue Books";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -174,25 +194,25 @@ namespace eLibrary_System
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // btnBooks
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(232)))), ((int)(((byte)(129)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 223);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(262, 48);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "           Books";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnBooks.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBooks.FlatAppearance.BorderSize = 0;
+            this.btnBooks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(232)))), ((int)(((byte)(129)))));
+            this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooks.ForeColor = System.Drawing.Color.White;
+            this.btnBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnBooks.Image")));
+            this.btnBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBooks.Location = new System.Drawing.Point(0, 223);
+            this.btnBooks.Name = "btnBooks";
+            this.btnBooks.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnBooks.Size = new System.Drawing.Size(262, 48);
+            this.btnBooks.TabIndex = 2;
+            this.btnBooks.Text = "           Books";
+            this.btnBooks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBooks.UseVisualStyleBackColor = true;
+            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
             // 
             // button1
             // 
@@ -218,8 +238,8 @@ namespace eLibrary_System
             // 
             this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.round1);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblRole);
+            this.panel3.Controls.Add(this.lblUsername);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -228,27 +248,49 @@ namespace eLibrary_System
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label3
+            // linkLabel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(121, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "role";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(121, 107);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(67, 15);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Edit Profile";
             // 
-            // label2
+            // round1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(121, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "USERNAME";
+            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
+            this.round1.Location = new System.Drawing.Point(15, 36);
+            this.round1.Name = "round1";
+            this.round1.Size = new System.Drawing.Size(100, 100);
+            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.round1.TabIndex = 4;
+            this.round1.TabStop = false;
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.White;
+            this.lblRole.Location = new System.Drawing.Point(121, 92);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(29, 15);
+            this.lblRole.TabIndex = 3;
+            this.lblRole.Text = "role";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(121, 76);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(92, 16);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "USERNAME";
             // 
             // label1
             // 
@@ -285,6 +327,17 @@ namespace eLibrary_System
             this.label5.TabIndex = 2;
             this.label5.Text = "Palawan National School";
             // 
+            // round2
+            // 
+            this.round2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.round2.Image = ((System.Drawing.Image)(resources.GetObject("round2.Image")));
+            this.round2.Location = new System.Drawing.Point(633, 0);
+            this.round2.Name = "round2";
+            this.round2.Size = new System.Drawing.Size(86, 86);
+            this.round2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.round2.TabIndex = 1;
+            this.round2.TabStop = false;
+            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -306,58 +359,6 @@ namespace eLibrary_System
             this.pnl_body.TabIndex = 2;
             this.pnl_body.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_body_Paint);
             // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 521);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(262, 34);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "      Logout";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // round2
-            // 
-            this.round2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.round2.Image = ((System.Drawing.Image)(resources.GetObject("round2.Image")));
-            this.round2.Location = new System.Drawing.Point(633, 0);
-            this.round2.Name = "round2";
-            this.round2.Size = new System.Drawing.Size(86, 86);
-            this.round2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.round2.TabIndex = 1;
-            this.round2.TabStop = false;
-            // 
-            // round1
-            // 
-            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
-            this.round1.Location = new System.Drawing.Point(15, 36);
-            this.round1.Name = "round1";
-            this.round1.Size = new System.Drawing.Size(100, 100);
-            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.round1.TabIndex = 4;
-            this.round1.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(121, 107);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(67, 15);
-            this.linkLabel1.TabIndex = 5;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Edit Profile";
-            // 
             // frm_home
             // 
             this.ClientSize = new System.Drawing.Size(1002, 555);
@@ -372,10 +373,10 @@ namespace eLibrary_System
             this.pnl_nav.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.round1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.round2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.round1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,7 +386,7 @@ namespace eLibrary_System
         private System.Windows.Forms.Panel pnl_nav;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnl_body;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBooks;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button7;
@@ -393,14 +394,14 @@ namespace eLibrary_System
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private round round1;
         private round round2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.Label lblUsername;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lblRole;
+        public round round1;
+        public System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

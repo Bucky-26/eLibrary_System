@@ -9,12 +9,14 @@ namespace eLibrary_System
         SqlConnection con;
         SqlCommand com;
         SqlDataReader reader;
+        frmAccounts _newCreateAccount;
 
-
-        public frmCreateAccount()
+        public frmCreateAccount(frmAccounts _newCreateAccount)
         {
             InitializeComponent();
             con = new SqlConnection(crud.connection);
+
+            this._newCreateAccount = _newCreateAccount;
         }
 
         public void CreateAccount()
@@ -32,6 +34,8 @@ namespace eLibrary_System
                 com.ExecuteNonQuery();
                 MessageBox.Show("Account created successfully", "eLibrary System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 con.Close();
+
+                _newCreateAccount.displayAccount();
             }
             catch (Exception ex)
             {
@@ -72,6 +76,11 @@ namespace eLibrary_System
             {
                 con.Close();
             }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
