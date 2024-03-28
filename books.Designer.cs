@@ -29,8 +29,8 @@ namespace eLibrary_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(books));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,8 +47,10 @@ namespace eLibrary_System
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_add = new System.Windows.Forms.Button();
             this.txtSearchBooks = new MetroFramework.Controls.MetroTextBox();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btnImportcsv = new System.Windows.Forms.Button();
+            this.FileDialogImportCSV = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgviewBook)).BeginInit();
@@ -95,21 +97,21 @@ namespace eLibrary_System
             // dgviewBook
             // 
             this.dgviewBook.AllowUserToAddRows = false;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgviewBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgviewBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgviewBook.BackgroundColor = System.Drawing.Color.White;
             this.dgviewBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgviewBook.CausesValidation = false;
             this.dgviewBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgviewBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgviewBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgviewBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgviewBook.ColumnHeadersHeight = 30;
             this.dgviewBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgviewBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -233,6 +235,7 @@ namespace eLibrary_System
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnImportcsv);
             this.panel3.Controls.Add(this.txtSearchBooks);
             this.panel3.Controls.Add(this.btn_add);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -241,22 +244,6 @@ namespace eLibrary_System
             this.panel3.Size = new System.Drawing.Size(900, 41);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // btn_add
-            // 
-            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn_add.FlatAppearance.BorderSize = 0;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(12, 6);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
-            this.btn_add.TabIndex = 1;
-            this.btn_add.Text = "ADD BOOK";
-            this.btn_add.UseVisualStyleBackColor = false;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // txtSearchBooks
             // 
@@ -303,6 +290,42 @@ namespace eLibrary_System
             this.txtSearchBooks.TextChanged += new System.EventHandler(this.txtSearchBooks_TextChanged);
             this.txtSearchBooks.Click += new System.EventHandler(this.txtSearchBooks_Click);
             // 
+            // btn_add
+            // 
+            this.btn_add.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn_add.FlatAppearance.BorderSize = 0;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.ForeColor = System.Drawing.Color.White;
+            this.btn_add.Location = new System.Drawing.Point(12, 10);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.TabIndex = 1;
+            this.btn_add.Text = "ADD BOOK";
+            this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // btnImportcsv
+            // 
+            this.btnImportcsv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnImportcsv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btnImportcsv.FlatAppearance.BorderSize = 0;
+            this.btnImportcsv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImportcsv.ForeColor = System.Drawing.Color.White;
+            this.btnImportcsv.Location = new System.Drawing.Point(93, 9);
+            this.btnImportcsv.Name = "btnImportcsv";
+            this.btnImportcsv.Size = new System.Drawing.Size(103, 23);
+            this.btnImportcsv.TabIndex = 3;
+            this.btnImportcsv.Text = "IMPORT CSV";
+            this.btnImportcsv.UseVisualStyleBackColor = false;
+            this.btnImportcsv.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // FileDialogImportCSV
+            // 
+            this.FileDialogImportCSV.FileName = "openFileDialog1";
+            // 
             // books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,5 +365,7 @@ namespace eLibrary_System
         private System.Windows.Forms.DataGridViewImageColumn edit;
         private System.Windows.Forms.DataGridViewImageColumn delete;
         private MetroFramework.Controls.MetroTextBox txtSearchBooks;
+        private System.Windows.Forms.Button btnImportcsv;
+        private System.Windows.Forms.OpenFileDialog FileDialogImportCSV;
     }
 }

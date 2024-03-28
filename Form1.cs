@@ -51,7 +51,6 @@ namespace eLibrary_System
                     frm_home newHome = new frm_home();
                     newHome._accID = reader["AccID"].ToString();
 
-                    // Load user info including photo
                     if (!reader.IsDBNull(reader.GetOrdinal("PHOTO")))
                     {
                         long imgBinary = reader.GetBytes(reader.GetOrdinal("PHOTO"), 0, null, 0, 0);
@@ -65,7 +64,6 @@ namespace eLibrary_System
                     }
                     else
                     {
-                        // Set a default image or handle the absence of an image as needed
                     }
 
                     newHome.lblUsername.Text = reader["Username"].ToString();
@@ -149,10 +147,7 @@ namespace eLibrary_System
             }
         }
 
-        private async void button1_Click_1(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

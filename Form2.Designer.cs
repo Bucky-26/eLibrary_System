@@ -467,9 +467,9 @@ namespace eLibrary_System
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel7);
-            this.tabPage1.Location = new System.Drawing.Point(4, 35);
+            this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1032, 533);
+            this.tabPage1.Size = new System.Drawing.Size(792, 408);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "HISTORY";
             // 
@@ -481,7 +481,7 @@ namespace eLibrary_System
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1032, 533);
+            this.panel7.Size = new System.Drawing.Size(792, 408);
             this.panel7.TabIndex = 0;
             // 
             // dataGridView1
@@ -521,7 +521,7 @@ namespace eLibrary_System
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1032, 486);
+            this.dataGridView1.Size = new System.Drawing.Size(792, 361);
             this.dataGridView1.TabIndex = 2;
             // 
             // id
@@ -556,7 +556,7 @@ namespace eLibrary_System
             this.Column1.Name = "Column1";
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 39;
+            this.Column1.Width = 40;
             // 
             // Column2
             // 
@@ -608,7 +608,7 @@ namespace eLibrary_System
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1032, 47);
+            this.panel8.Size = new System.Drawing.Size(792, 47);
             this.panel8.TabIndex = 0;
             // 
             // Form2

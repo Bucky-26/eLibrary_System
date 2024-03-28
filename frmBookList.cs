@@ -21,5 +21,10 @@ namespace eLibrary_System
         {
 
         }
+
+        private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

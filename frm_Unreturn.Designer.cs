@@ -163,7 +163,7 @@ namespace eLibrary_System
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn4.Width = 39;
+            this.dataGridViewTextBoxColumn4.Width = 40;
             // 
             // dataGridViewTextBoxColumn5
             // 
