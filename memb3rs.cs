@@ -64,53 +64,54 @@ namespace eLibrary_System
                     string.IsNullOrEmpty(txtadviser.Text))
                 {
                     MessageBox.Show("Please fill in all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return; 
+                    return;
                 }
 
-                MemoryStream save_img = new MemoryStream();
-                if (imgboxStudent.Image != null)
+                // Check if an image is selected
+                if (imgboxStudent.Image == null)
                 {
-                    imgboxStudent.Image.Save(save_img, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    MessageBox.Show("Please select an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
 
-                con.Open();
-                com = new SqlCommand("INSERT INTO MEMBERS (LC_Num, LRN_Num, NAME, DATE_OF_BIRTH, GENDER, ADDRESS, CONTACT_NUMBER, GRADE_LEVEL, Section, ADVISER, PHOTO) VALUES(@LC_Num, @LRN_Num, @NAME, @DATE_OF_BIRTH, @GENDER, @ADDRESS, @CONTACT_NUM, @GRADE_LEVEL, @Section, @ADVISER, @PHOTO)", con);
-
-                com.Parameters.AddWithValue("@LC_Num", txtLCnumber.Text);
-                com.Parameters.AddWithValue("@LRN_Num", txtlcnum.Text);
-                com.Parameters.AddWithValue("@NAME", txtfname.Text);
-                com.Parameters.AddWithValue("@DATE_OF_BIRTH", dateTimePicker1.Value);
-                com.Parameters.AddWithValue("@GENDER", cmboxGender.Text);
-                com.Parameters.AddWithValue("@ADDRESS", txtaddress.Text);
-                com.Parameters.AddWithValue("@CONTACT_NUM", txtcnum.Text);
-                com.Parameters.AddWithValue("@GRADE_LEVEL", txtgl.Text);
-                com.Parameters.AddWithValue("@Section", txtsec.Text);
-                com.Parameters.AddWithValue("@ADVISER", txtadviser.Text);
-
-                if (imgboxStudent.Image != null)
+                // Convert the image to byte array
+                byte[] photoBytes;
+                using (MemoryStream ms = new MemoryStream())
                 {
-                    ImageConverter converter = new ImageConverter();
-                    byte[] photoBytes = (byte[])converter.ConvertTo(imgboxStudent.Image, typeof(byte[]));
-                    com.Parameters.AddWithValue("@PHOTO", photoBytes);
-                }
-                else
-                {
-                    com.Parameters.AddWithValue("@PHOTO", DBNull.Value);
+                    imgboxStudent.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    photoBytes = ms.ToArray();
                 }
 
-                com.ExecuteNonQuery();
+                membersInfo newwMember = new membersInfo()
+                {
+                    LC_Num = txtLCnumber.Text,
+                    LRN_Num = txtlcnum.Text,
+                    NAME = txtfname.Text,
+                    DATE_OF_BIRTH = dateTimePicker1.Value,
+                    GENDER = cmboxGender.Text,
+                    ADDRESS = txtaddress.Text,
+                    CONTACT_NUMBER = txtcnum.Text,
+                    Section = txtsec.Text,
+                    ADVISER = txtadviser.Text,
+                    GRADE_LEVEL = txtgl.Text
+                };
+
+                MembersData membersData = new MembersData();
+                membersData.NewMembers(newwMember, photoBytes); // Pass the photo byte array
+
                 MessageBox.Show("Member added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                newMembers.loadMembers();
+
                 ClearTextBoxes();
-                con.Close();
             }
             catch (Exception ex)
             {
-                con.Close();
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
         }
+
+
+
+
 
         public void UpdateMembers()
         {
@@ -168,9 +169,7 @@ namespace eLibrary_System
                     ClearTextBoxes();
 
                     MessageBox.Show("Student Info updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    newMembers.loadMembers();
-                    this.Dispose();
-                
+                 
 
 
                 }
@@ -196,6 +195,9 @@ namespace eLibrary_System
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             UpdateMembers();
+            newMembers.loadMembers();
+            this.Dispose();
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)

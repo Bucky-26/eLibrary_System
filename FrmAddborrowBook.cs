@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace eLibrary_System
 {
+
     public partial class FrmAddborrowBook : Form
     {
+
         public FrmAddborrowBook()
         {
             InitializeComponent();
@@ -36,6 +38,11 @@ namespace eLibrary_System
         {
             frmBookList newList = new frmBookList();
             newList.ShowDialog();
+        }
+
+        private void txtStuBlock_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

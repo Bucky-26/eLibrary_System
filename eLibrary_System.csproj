@@ -151,6 +151,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookInfo.cs" />
     <Compile Include="books.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +168,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="crud.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="custoeTextbox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -274,6 +281,8 @@
     <Compile Include="memb3rs.Designer.cs">
       <DependentUpon>memb3rs.cs</DependentUpon>
     </Compile>
+    <Compile Include="memberInfo.cs" />
+    <Compile Include="MembersData.cs" />
     <Compile Include="OPTservice.cs" />
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
@@ -291,6 +300,10 @@
     </Compile>
     <EmbeddedResource Include="books.resx">
       <DependentUpon>books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -386,6 +399,20 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CrystalPrintControlLib">
+      <Guid>{62862E3F-F35B-455E-9459-49EAADE80A25}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

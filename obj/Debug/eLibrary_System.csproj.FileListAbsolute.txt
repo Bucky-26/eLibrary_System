@@ -75,3 +75,7 @@ I:\eLibrary_System\bin\Debug\System.Memory.xml
 I:\eLibrary_System\bin\Debug\System.Numerics.Vectors.xml
 I:\eLibrary_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 I:\eLibrary_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+I:\eLibrary_System\bin\Debug\AxShockwaveFlashObjects.dll
+I:\eLibrary_System\bin\Debug\ShockwaveFlashObjects.dll
+I:\eLibrary_System\obj\Debug\Interop.CrystalPrintControlLib.dll
+I:\eLibrary_System\obj\Debug\eLibrary_System.csproj.ResolveComReference.cache

@@ -352,6 +352,7 @@ namespace eLibrary_System
             // 
             // pnl_body
             // 
+            this.pnl_body.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_body.Location = new System.Drawing.Point(262, 86);
             this.pnl_body.Name = "pnl_body";

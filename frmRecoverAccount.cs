@@ -8,18 +8,18 @@ namespace eLibrary_System
     public partial class frmRecoverAccount : Form
     {
         string _cOTP;
-        int remainingSeconds = 60; // Initial remaining time in seconds
+        int remainingSeconds = 60; 
         Timer timer;
         SqlConnection _cConnection;
         SqlCommand _cCommand;
         string _mail;
         SqlDataReader _cDataReader;
-        EmailService _emailService; // Instance of EmailService
+        EmailService _emailService;
 
         public frmRecoverAccount()
         {
             _cConnection = new SqlConnection(crud.connection);
-            _emailService = new EmailService(); // Initialize EmailService
+            _emailService = new EmailService();
             InitializeComponent();
         }
 
@@ -95,7 +95,7 @@ namespace eLibrary_System
             {
                 _cConnection.Open();
                 _cCommand = new SqlCommand("UPDATE ACCOUNTS SET Password = @Password WHERE Username = @Username OR Email = @Email", _cConnection);
-                _cCommand.Parameters.AddWithValue("@Email", _mail); // Use _mail variable
+                _cCommand.Parameters.AddWithValue("@Email", _mail); 
                 _cCommand.Parameters.AddWithValue("@Username", txtEmailcontainer.Text);
                 _cCommand.Parameters.AddWithValue("@Password", txtnewPassword.Text);
 

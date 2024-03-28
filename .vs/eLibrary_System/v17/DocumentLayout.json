@@ -1,0 +1,475 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\eLibrary_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\frmaddborrowbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frmaddborrowbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\frmaddborrowbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frmaddborrowbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\frmbooklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frmbooklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\frmbooklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frmbooklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\frmrecoveraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frmrecoveraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\frm_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frm_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\frm_unreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frm_unreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\membersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:membersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\memb3rs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:memb3rs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\optservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:optservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\memb3rs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:memb3rs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\memberinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:memberinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\frm_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frm_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\frm_borrowbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frm_borrowbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\customlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:customlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\crystalreport1.rpt||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:crystalreport1.rpt||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|i:\\elibrary_system\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\frmrecoveraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frmrecoveraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\frm_addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:frm_addbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|I:\\eLibrary_System\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04A06386-3C4B-4002-8224-1B044852D6CD}|eLibrary_System.csproj|solutionrelative:class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MembersData.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\MembersData.cs",
+              "RelativeDocumentMoniker": "MembersData.cs",
+              "ToolTip": "I:\\eLibrary_System\\MembersData.cs",
+              "RelativeToolTip": "MembersData.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:38:41.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "crud.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\crud.cs",
+              "RelativeDocumentMoniker": "crud.cs",
+              "ToolTip": "I:\\eLibrary_System\\crud.cs",
+              "RelativeToolTip": "crud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:53:35.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "memb3rs.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\memb3rs.cs",
+              "RelativeDocumentMoniker": "memb3rs.cs",
+              "ToolTip": "I:\\eLibrary_System\\memb3rs.cs [Design]",
+              "RelativeToolTip": "memb3rs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:52:12.404Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "memberInfo.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\memberInfo.cs",
+              "RelativeDocumentMoniker": "memberInfo.cs",
+              "ToolTip": "I:\\eLibrary_System\\memberInfo.cs",
+              "RelativeToolTip": "memberInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:45:49.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookInfo.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\BookInfo.cs",
+              "RelativeDocumentMoniker": "BookInfo.cs",
+              "ToolTip": "I:\\eLibrary_System\\BookInfo.cs",
+              "RelativeToolTip": "BookInfo.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T14:15:59.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmAddborrowBook.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\FrmAddborrowBook.cs",
+              "RelativeDocumentMoniker": "FrmAddborrowBook.cs",
+              "ToolTip": "I:\\eLibrary_System\\FrmAddborrowBook.cs",
+              "RelativeToolTip": "FrmAddborrowBook.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAwCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:52:52.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmAddborrowBook.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\FrmAddborrowBook.cs",
+              "RelativeDocumentMoniker": "FrmAddborrowBook.cs",
+              "ToolTip": "I:\\eLibrary_System\\FrmAddborrowBook.cs [Design]",
+              "RelativeToolTip": "FrmAddborrowBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:52:51.228Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frm_borrowBooks.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\frm_borrowBooks.cs",
+              "RelativeDocumentMoniker": "frm_borrowBooks.cs",
+              "ToolTip": "I:\\eLibrary_System\\frm_borrowBooks.cs",
+              "RelativeToolTip": "frm_borrowBooks.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:52:28.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmBookList.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\frmBookList.cs",
+              "RelativeDocumentMoniker": "frmBookList.cs",
+              "ToolTip": "I:\\eLibrary_System\\frmBookList.cs",
+              "RelativeToolTip": "frmBookList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:51:58.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmBookList.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\frmBookList.cs",
+              "RelativeDocumentMoniker": "frmBookList.cs",
+              "ToolTip": "I:\\eLibrary_System\\frmBookList.cs [Design]",
+              "RelativeToolTip": "frmBookList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:51:57.226Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "customlabel.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\customlabel.cs",
+              "RelativeDocumentMoniker": "customlabel.cs",
+              "ToolTip": "I:\\eLibrary_System\\customlabel.cs [Design]",
+              "RelativeToolTip": "customlabel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:51:51.499Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CrystalReport1.rpt",
+              "DocumentMoniker": "I:\\eLibrary_System\\CrystalReport1.rpt",
+              "RelativeDocumentMoniker": "CrystalReport1.rpt",
+              "ToolTip": "I:\\eLibrary_System\\CrystalReport1.rpt",
+              "RelativeToolTip": "CrystalReport1.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-03-28T13:51:42.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
+              "ToolTip": "I:\\eLibrary_System\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T12:44:52.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frm_Unreturn.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\frm_Unreturn.cs",
+              "RelativeDocumentMoniker": "frm_Unreturn.cs",
+              "ToolTip": "I:\\eLibrary_System\\frm_Unreturn.cs [Design]",
+              "RelativeToolTip": "frm_Unreturn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:33:49.512Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frm_home.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\frm_home.cs",
+              "RelativeDocumentMoniker": "frm_home.cs",
+              "ToolTip": "I:\\eLibrary_System\\frm_home.cs",
+              "RelativeToolTip": "frm_home.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAkwJAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:15:02.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "memb3rs.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\memb3rs.cs",
+              "RelativeDocumentMoniker": "memb3rs.cs",
+              "ToolTip": "I:\\eLibrary_System\\memb3rs.cs",
+              "RelativeToolTip": "memb3rs.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAYwL8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T08:15:00.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OPTservice.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\OPTservice.cs",
+              "RelativeDocumentMoniker": "OPTservice.cs",
+              "ToolTip": "I:\\eLibrary_System\\OPTservice.cs",
+              "RelativeToolTip": "OPTservice.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwAkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T05:36:27.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmRecoverAccount.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\frmRecoverAccount.cs",
+              "RelativeDocumentMoniker": "frmRecoverAccount.cs",
+              "ToolTip": "I:\\eLibrary_System\\frmRecoverAccount.cs",
+              "RelativeToolTip": "frmRecoverAccount.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAqwBUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T05:33:32.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmRecoverAccount.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\frmRecoverAccount.cs",
+              "RelativeDocumentMoniker": "frmRecoverAccount.cs",
+              "ToolTip": "I:\\eLibrary_System\\frmRecoverAccount.cs [Design]",
+              "RelativeToolTip": "frmRecoverAccount.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T05:33:30.872Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frm_addBooks.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\frm_addBooks.cs",
+              "RelativeDocumentMoniker": "frm_addBooks.cs",
+              "ToolTip": "I:\\eLibrary_System\\frm_addBooks.cs [Design]",
+              "RelativeToolTip": "frm_addBooks.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T13:32:06.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "I:\\eLibrary_System\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T18:57:57.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "books.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\books.cs",
+              "RelativeDocumentMoniker": "books.cs",
+              "ToolTip": "I:\\eLibrary_System\\books.cs [Design]",
+              "RelativeToolTip": "books.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:34:11.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "splashScreen.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\splashScreen.cs",
+              "RelativeDocumentMoniker": "splashScreen.cs",
+              "ToolTip": "I:\\eLibrary_System\\splashScreen.cs [Design]",
+              "RelativeToolTip": "splashScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T13:31:49.278Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "books.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\books.cs",
+              "RelativeDocumentMoniker": "books.cs",
+              "ToolTip": "I:\\eLibrary_System\\books.cs",
+              "RelativeToolTip": "books.cs",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAiwPkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T11:22:24.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frm_home.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\frm_home.cs",
+              "RelativeDocumentMoniker": "frm_home.cs",
+              "ToolTip": "I:\\eLibrary_System\\frm_home.cs [Design]",
+              "RelativeToolTip": "frm_home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T19:30:59.358Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "I:\\eLibrary_System\\Form2.cs [Design]",
+              "RelativeToolTip": "Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T18:59:42.795Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "I:\\eLibrary_System\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "I:\\eLibrary_System\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAEwC4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T18:58:14.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Class2.cs [Design]",
+              "DocumentMoniker": "I:\\eLibrary_System\\Class2.cs",
+              "RelativeDocumentMoniker": "Class2.cs",
+              "ToolTip": "I:\\eLibrary_System\\Class2.cs [Design]",
+              "RelativeToolTip": "Class2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T18:57:54.579Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

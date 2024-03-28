@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 public class EmailService
 {
     private readonly HttpClient _httpClient;
-    private const string ApiBaseUrl = "https://auth.pns-ict.tech/v1"; // Base URL for API
+    private const string ApiBaseUrl = "https://auth.pns-ict.tech/v1";
 
     public EmailService()
     {
@@ -48,17 +48,15 @@ public class EmailService
             var requestUri = new Uri($"{ApiBaseUrl}/otp-check");
             var response = await _httpClient.PostAsync(requestUri, content);
 
-            // Check if the response is successful
             if (response.IsSuccessStatusCode)
             {
                 var responseBody = await response.Content.ReadAsStringAsync();
                 dynamic jsonResponse = JsonConvert.DeserializeObject(responseBody);
-                bool isValidOTP = jsonResponse.valid; // Assuming "valid" property contains the validity information
+                bool isValidOTP = jsonResponse.valid;
                 return isValidOTP;
             }
             else
             {
-                // Log the response status and content for debugging
                 var errorContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"Error: {response.StatusCode} - {errorContent}");
                 return false;
@@ -66,7 +64,6 @@ public class EmailService
         }
         catch (Exception ex)
         {
-            // Log any exception that occurs during the request
             Console.WriteLine($"Exception: {ex.Message}");
             return false;
         }

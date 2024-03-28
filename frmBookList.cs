@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace eLibrary_System
@@ -17,14 +10,54 @@ namespace eLibrary_System
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void frmBookList_Load(object sender, EventArgs e)
+        {
+            LoadBooks();
+        }
+
+        private void kryptonLabel1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void LoadBooks()
+        {
+            try
+            {
+                dgviewBook.Rows.Clear();
+                string searchQuery = txtSearchBooks.Text;
+                var booksList = BookInfo.GetBooks(searchQuery);
+
+                foreach (var book in booksList)
+                {
+                    dgviewBook.Rows.Add(book.SessionNumber, book.Title, book.Publication, book.Author,
+                                        book.ReleaseDate.ToShortDateString(), book.SubjectArea, book.DdcNumber);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "PNS eLibrary [ ERROR ]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSearchBooks_TextChanged(object sender, EventArgs e)
+        {
+            LoadBooks();
+        }
+
+        private void dgviewBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
         private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void kryptonLabel1_Click_1(object sender, EventArgs e)
+        {
             this.Close();
+
         }
     }
 }
