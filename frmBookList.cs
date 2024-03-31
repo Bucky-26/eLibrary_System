@@ -1,13 +1,17 @@
-﻿using System;
+﻿
+using System;
+using System.Diagnostics.Contracts;
 using System.Windows.Forms;
 
 namespace eLibrary_System
 {
     public partial class frmBookList : Form
     {
-        public frmBookList()
+        FrmAddborrowBook newb;
+        public frmBookList(FrmAddborrowBook newb)
         {
             InitializeComponent();
+            this.newb = newb;
         }
 
         private void frmBookList_Load(object sender, EventArgs e)
@@ -30,8 +34,7 @@ namespace eLibrary_System
 
                 foreach (var book in booksList)
                 {
-                    dgviewBook.Rows.Add(book.SessionNumber, book.Title, book.Publication, book.Author,
-                                        book.ReleaseDate.ToShortDateString(), book.SubjectArea, book.DdcNumber);
+                    dgviewBook.Rows.Add(book.SessionNumber, book.Title, book.Author, book.DdcNumber);
                 }
             }
             catch (Exception ex)
@@ -47,8 +50,25 @@ namespace eLibrary_System
 
         private void dgviewBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                string colName = dgviewBook.Columns[e.ColumnIndex].Name;
+                if (colName == "select")
+                {
 
+                    newb.txtbookAssesion.Text = dgviewBook.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    newb.txtbookTitle.Text = dgviewBook.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    newb.txtBookDDC.Text = dgviewBook.Rows[e.RowIndex].Cells[3].Value.ToString();
+
+                    this.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "PNS eLibrary [ ERROR ]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
         {

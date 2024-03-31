@@ -139,8 +139,7 @@ namespace eLibrary_System
         private void kryptonLabel3_Paint(object sender, PaintEventArgs e)
         {
             this.Close();
-            Form1 newForm = new Form1();
-            newForm.Show();
+           
         }
     }
 }

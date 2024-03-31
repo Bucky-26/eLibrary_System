@@ -342,7 +342,7 @@ namespace eLibrary_System
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(67, 232);
+            this.label9.Location = new System.Drawing.Point(67, 210);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(257, 29);
             this.label9.TabIndex = 2;

@@ -80,7 +80,7 @@ namespace eLibrary_System
 
         private void label11_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
     }
 }

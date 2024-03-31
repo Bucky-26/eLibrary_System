@@ -40,8 +40,8 @@ namespace eLibrary_System
             this.textbox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.textbox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptnLoginbtn = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.round1 = new eLibrary_System.round();
             this.label8 = new System.Windows.Forms.Label();
+            this.round1 = new eLibrary_System.round();
             ((System.ComponentModel.ISupportInitialize)(this.round1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -186,17 +186,6 @@ namespace eLibrary_System
             this.kryptnLoginbtn.Values.Text = "Login";
             this.kryptnLoginbtn.Click += new System.EventHandler(this.kryptnLoginbtn_Click);
             // 
-            // round1
-            // 
-            this.round1.BackColor = System.Drawing.Color.White;
-            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
-            this.round1.Location = new System.Drawing.Point(1, 1);
-            this.round1.Name = "round1";
-            this.round1.Size = new System.Drawing.Size(88, 75);
-            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.round1.TabIndex = 19;
-            this.round1.TabStop = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -209,6 +198,17 @@ namespace eLibrary_System
             this.label8.TabIndex = 20;
             this.label8.Text = "PALAWAN NATIONAL SCHOOL";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // round1
+            // 
+            this.round1.BackColor = System.Drawing.Color.White;
+            this.round1.Image = ((System.Drawing.Image)(resources.GetObject("round1.Image")));
+            this.round1.Location = new System.Drawing.Point(1, 1);
+            this.round1.Name = "round1";
+            this.round1.Size = new System.Drawing.Size(88, 75);
+            this.round1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.round1.TabIndex = 19;
+            this.round1.TabStop = false;
             // 
             // Form1
             // 
@@ -252,7 +252,6 @@ namespace eLibrary_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox textbox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox textbox2;

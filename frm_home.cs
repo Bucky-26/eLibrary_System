@@ -54,7 +54,8 @@ namespace eLibrary_System
                     books newBooks = new books();
                     newBooks.TopLevel = false;
                     newBooks.BringToFront();
-                    newBooks.loadBooks();
+                    newBooks.DisplayBooks();
+                    newBooks.dsplayddc("");
                     this.pnl_body.Controls.Add(newBooks);
                     newBooks.Show();
 
@@ -65,6 +66,7 @@ namespace eLibrary_System
                     frm_borrowBooks newBorrow = new frm_borrowBooks();
                     newBorrow.TopLevel = false;
                     newBorrow.BringToFront();
+                    newBorrow.LoadIssuedBooks();
                     this.pnl_body.Controls.Add(newBorrow);
                     newBorrow.Show();
                     break;
@@ -73,6 +75,8 @@ namespace eLibrary_System
                     frmReturn newReturn = new frmReturn();
                     newReturn.TopLevel = false;
                     newReturn.BringToFront();
+                   newReturn.DisplayReturn();
+                  newReturn.ReturnedBooks();
                     this.pnl_body.Controls.Add(newReturn);
                     newReturn.Show();
                     break;

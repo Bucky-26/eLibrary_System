@@ -144,10 +144,22 @@
   <metadata name="dataGridViewTextBoxColumn9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABq0lEQVQ4T32TO0/CUBTHWfTDyAjF0VAGB+MjMSYYR2dnGUUnFYSg8TGIiTr4CVzQRGcTIyk+QRIf
+        gyEu0iJt6OV4zmmLF6qc5Jfc/s/5n957exroDT2qBHVVySAlQ1UMgtasYc4t8wfMBAd1NbKJhTYC/4C5
+        cI5qXZsTbI4qBZ8hFnHo1bG2q4n7Zk4asxPQmJti7Osrxns24uNSo3DOMTtn5m0b06PQujjrC9W4TWw9
+        NjyEb1eyrsCYq8k/jQTl5Nq6GtmgBreyaJ0cQrv2AXbxGkTlCcRzmdekUU6uRTQ6vy6L1sEu2NoNWMd5
+        aBVOGetoH+xSEaz8jmwm6rSDuiyaW2kQD3fcqNMAjeLxHnMp2Ux8+Y5grq+AqJbB2sv9NsC1qFbAXFuW
+        zYQWoIuQxWYyAeLthXfiNaA3i/dXaC4lZDNeopLq+ozE9+ICtD9rYG5noHV5ztCaNMp5deyhz8izgEPh
+        JRrzcQAhwBeoUU5qkGUzBYRCA/IoG2MjYEyq3aDWMdMoo8e1O+H8TLyTfj9TC8n6zHLQnbgXqzkzwnOi
+        1aPhdOfMnQgEfgB8+VB26I0HbQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

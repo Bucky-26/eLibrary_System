@@ -67,14 +67,12 @@ namespace eLibrary_System
                     return;
                 }
 
-                // Check if an image is selected
                 if (imgboxStudent.Image == null)
                 {
                     MessageBox.Show("Please select an image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Convert the image to byte array
                 byte[] photoBytes;
                 using (MemoryStream ms = new MemoryStream())
                 {

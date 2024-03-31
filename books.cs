@@ -22,6 +22,7 @@ namespace eLibrary_System
         SqlConnection con;
         SqlCommand com;
         SqlDataReader readData;
+        string IDDDC;
         public books()
         {
             con = new SqlConnection(crud.connection);
@@ -134,6 +135,22 @@ namespace eLibrary_System
 
             }
         }
+        public void DisplayBooks()
+        {
+            try
+            {
+                dgviewBook.Rows.Clear();
+                var NewBookList = BookInfo.GetBooks(txtSearchBooks.Text);
+                foreach (var bookinfos in NewBookList) {
+                    dgviewBook.Rows.Add(bookinfos.SessionNumber, bookinfos.Title, bookinfos.Publication, bookinfos.Author,bookinfos.ReleaseDate.ToShortDateString(), bookinfos.SubjectArea, bookinfos.Pages, bookinfos.DdcNumber);
+
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "PNS eLMS [ ERROR ]",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
         private void dgviewBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string col_name = dgviewBook.Columns[e.ColumnIndex].Name;
@@ -166,7 +183,6 @@ namespace eLibrary_System
 
         private void ImportExcel(string filePath)
         {
-            // Create Excel application object
             Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
             Workbook excelWorkbook = null;
             Worksheet excelWorksheet = null;
@@ -174,22 +190,17 @@ namespace eLibrary_System
             try
             {
                 con.Open();
-                // Open the Excel file
                 excelWorkbook = excelApp.Workbooks.Open(filePath);
 
-                // Assuming the data is in the first worksheet, index 1
                 excelWorksheet = excelWorkbook.Sheets[1];
 
-                // Get the used range of cells
                 Range excelRange = excelWorksheet.UsedRange;
 
-                // Loop through the rows and columns to read data
                 int rowCount = excelRange.Rows.Count;
                 int colCount = excelRange.Columns.Count;
 
                 for (int row = 2; row <= rowCount; row++)
                 {
-                    // Create a new SqlCommand for each row
                     SqlCommand com = new SqlCommand();
                     com.Connection = con;
 
@@ -201,7 +212,7 @@ namespace eLibrary_System
                     if (!DateTime.TryParseExact(excelRange.Cells[row, 4].Value?.ToString(), "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out releaseDate))
                     {
                         MessageBox.Show($"Error parsing date in row {row}.");
-                        continue; // Skip this row and move to the next row
+                        continue; 
                     }
 
                     string ddcNum = excelRange.Cells[row, 5].Value?.ToString();
@@ -210,7 +221,6 @@ namespace eLibrary_System
                     int pages = int.Parse(excelRange.Cells[row, 8].Value?.ToString());
                     string location = excelRange.Cells[row, 9].Value?.ToString();
 
-                    // Set parameters for the SQL command
                     com.CommandText = @"INSERT INTO BOOKS (ASESSION_NUM, TITLE, AUTHOR, RELEASE_DATE, DDC_NUM, PUBLICATION, SUBJECT_AREA, PAGES, LOCATION)
                                VALUES (@ASESSION_NUM, @TITLE, @AUTHOR, @RELEASE_DATE, @DDC_NUM, @PUBLICATION, @SUBJECT_AREA, @PAGES, @LOCATION)";
 
@@ -224,7 +234,6 @@ namespace eLibrary_System
                     com.Parameters.AddWithValue("@PAGES", pages);
                     com.Parameters.AddWithValue("@LOCATION", location);
 
-                    // Execute the SQL command for each row
                     com.ExecuteNonQuery();
                 }
 
@@ -236,7 +245,6 @@ namespace eLibrary_System
             }
             finally
             {
-                // Close and release Excel objects
                 excelWorkbook.Close(false);
                 excelApp.Quit();
 
@@ -244,7 +252,7 @@ namespace eLibrary_System
                 ReleaseComObject(excelWorkbook);
                 ReleaseComObject(excelApp);
 
-                con.Close(); // Close the database connection
+                con.Close();
             }
         }
 
@@ -302,6 +310,174 @@ namespace eLibrary_System
             public string Location { get; set; }
         }
 
+       
 
+
+
+        public void addddc()
+        {
+            try
+            {
+                DDCInfo newDDcInfo = new DDCInfo()
+                {
+                    Category = txtCategory.Text,
+                    deweyDecimal = txtdewey.Text
+                };
+                BookInfo.InsertDDc(newDDcInfo);
+                MessageBox.Show("The data has been added on database", "PNS eLMS [ System ]", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "PNS eLMS [ ERROR ]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (txtCategory.Text == "" || txtdewey.Text == "")
+            {
+                MessageBox.Show("Please fill all fields", "PNS eLMS [SYSTEM]", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                addddc();
+                dsplayddc(kryptonTextBox1.Text);
+                cleartxt();
+            }
+        }
+
+        public void UpdateDDC()
+        {
+            try
+            {
+                DDCInfo newDDcInfo = new DDCInfo()
+                {
+                    DDCID = IDDDC,
+                    Category = txtCategory.Text,
+                    deweyDecimal = txtdewey.Text
+                };
+
+                BookInfo bookInfo = new BookInfo();
+
+                bookInfo.ddcUpdate(newDDcInfo);
+
+                MessageBox.Show("The data has been added to the database", "PNS eLMS [ System ]", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "PNS eLMS [ ERROR ]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_add_Click_1(object sender, EventArgs e)
+        {
+            frm_addBooks newAddbook = new frm_addBooks(this);
+            newAddbook.ShowDialog();
+
+        }
+
+        private void dgviewBook_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            string col_name = dgviewBook.Columns[e.ColumnIndex].Name;
+
+            switch (col_name)
+            {
+                case "edit":
+                    editBooks(dgviewBook.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    break;
+                case "delete":
+                    DialogResult deleteQ = MessageBox.Show("Do you want to Delete this book?", "eLibrary System!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (deleteQ == DialogResult.Yes)
+                    {
+                        DeleteBook(dgviewBook.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    }
+                    break;
+            }
+        }
+
+        private void txtSearchBooks_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtSearchBooks_TextChanged_1(object sender, EventArgs e)
+        {
+            loadBooks();
+        }
+        public void dsplayddc(string sQ) {
+            try
+            {
+                dataGridView1.Rows.Clear();
+                var ddcLoad = BookInfo.LoadDDC(sQ);
+
+                foreach(var ddc in ddcLoad)
+                {
+                    dataGridView1.Rows.Add(ddc.DDCID,ddc.Category,ddc.deweyDecimal);
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "PNS eLMS [ ERROR ]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                txtCategory.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                IDDDC = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtdewey.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                btnDelete.Enabled = true;
+                btnSave.Enabled = false;
+                btnUpdate.Enabled = true;
+            }
+        }
+
+        private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            dsplayddc(kryptonTextBox1.Text);
+        }
+
+        private void btncl_Click(object sender, EventArgs e)
+        {
+            txtCategory.Text = "";
+            txtdewey.Text = "";
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
+            btnSave.Enabled = true;
+        }
+        public void cleartxt()
+        {
+            txtCategory.Text = "";
+            txtdewey.Text = "";
+            IDDDC = "";
+        }
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (txtCategory.Text == "" || txtdewey.Text == "")
+            {
+                MessageBox.Show("Please fill all fields", "PNS eLMS [SYSTEM]", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                UpdateDDC();
+                dsplayddc(kryptonTextBox1.Text);
+                cleartxt();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
-}
+    }
+

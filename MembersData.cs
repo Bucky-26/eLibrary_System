@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace eLibrary_System
@@ -39,5 +41,65 @@ namespace eLibrary_System
                 throw ex;
             }
         }
+
+        public List<membersInfo> LoadMembers(string searchQ)
+        {
+            List<membersInfo> membersList = new List<membersInfo>();
+            _newConnection = new SqlConnection(crud.connection);
+
+            try
+            {
+                _newConnection.Open();
+                string query = @"SELECT LC_Num, LRN_Num, NAME, DATE_OF_BIRTH, GENDER, ADDRESS, CONTACT_NUMBER, GRADE_LEVEL, Section, ADVISER, PHOTO 
+                         FROM MEMBERS 
+                         WHERE LC_Num Like @SQUERY OR LRN_Num Like @SQUERY OR NAME Like @SQUERY OR GRADE_LEVEL Like @SQUERY OR ADVISER like @SQUERY";
+                _command = new SqlCommand(query, _newConnection);
+                _command.Parameters.AddWithValue("@SQUERY", "%" + searchQ + "%");
+                SqlDataReader reader = _command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    membersInfo member = new membersInfo();
+                    member.LC_Num = reader["LC_Num"].ToString();
+                    member.LRN_Num = reader["LRN_Num"].ToString();
+                    member.NAME = reader["NAME"].ToString();
+                    member.DATE_OF_BIRTH = Convert.ToDateTime(reader["DATE_OF_BIRTH"]);
+                    member.GENDER = reader["GENDER"].ToString();
+                    member.ADDRESS = reader["ADDRESS"].ToString();
+                    member.CONTACT_NUMBER = reader["CONTACT_NUMBER"].ToString();
+                    member.GRADE_LEVEL = reader["GRADE_LEVEL"].ToString();
+                    member.Section = reader["Section"].ToString();
+                    member.ADVISER = reader["ADVISER"].ToString();
+
+                    if (reader["PHOTO"] != DBNull.Value)
+                    {
+                        member.PHOTO = (byte[])reader["PHOTO"];
+                    }
+                    else
+                    {
+                        member.PHOTO = null; 
+                    }
+
+                    membersList.Add(member);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception as needed
+                throw ex;
+            }
+            finally
+            {
+                if (_newConnection != null && _newConnection.State == ConnectionState.Open)
+                {
+                    _newConnection.Close();
+                }
+            }
+
+            return membersList;
+        }
+
     }
 }

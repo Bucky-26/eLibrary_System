@@ -39,31 +39,28 @@ namespace eLibrary_System
         {
             try
             {
-                con.Open();
-                string sql = @"INSERT INTO BOOKS (ASESSION_NUM, TITLE, AUTHOR, RELEASE_DATE, DDC_NUM, PUBLICATION, SUBJECT_AREA, PAGES, LOCATION)
-                       VALUES (@ASESSION_NUM, @TITLE, @AUTHOR, @RELEASE_DATE, @DDC_NUM, @PUBLICATION, @SUBAREA, @PAGES, @LOCATION)";
+                BookInfo newData = new BookInfo()
+                {
+                    SessionNumber = ASESSION_NUM,
+                    Title = title,
+                    Author = author,
+                    ReleaseDate = releaseDate,
+                    DdcNumber = ddc_num,
+                    Publication = publication,
+                    SubjectArea = subarea,
+                    Pages = pages,
+                    location = location
+                };
 
-                 com = new SqlCommand(sql, con);
-                com.Parameters.AddWithValue("@ASESSION_NUM", ASESSION_NUM);
-                com.Parameters.AddWithValue("@TITLE", title);
-                com.Parameters.AddWithValue("@AUTHOR", author);
-                com.Parameters.AddWithValue("@RELEASE_DATE", releaseDate);
-                com.Parameters.AddWithValue("@DDC_NUM", ddc_num);
-                com.Parameters.AddWithValue("@PUBLICATION", publication);
-                com.Parameters.AddWithValue("@SUBAREA", subarea);
-                com.Parameters.AddWithValue("@PAGES", pages);
-                com.Parameters.AddWithValue("@LOCATION", location);
-                com.ExecuteNonQuery();
-                MessageBox.Show("Books has been added to database successfully", "PNS eLibrary [SYSTEM]", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                newBooks.loadBooks();
-                con.Close();
+                BookInfo.InsertNew(newData);
+
                 ClearTextBoxes();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "PNS eLibrary [SYSTEM]", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
+
         }
         public void UpdateBooks(string ASESSION_NUM, string title, string author, DateTime releaseDate, string ddc_num, string publication, string subarea, int pages, string location)
         {
@@ -162,6 +159,11 @@ namespace eLibrary_System
             {
                 MessageBox.Show("Please enter a valid number for the page count.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

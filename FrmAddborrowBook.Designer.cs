@@ -54,6 +54,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnBorrow = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.pnl_top.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -286,6 +287,7 @@
             this.dtdueDate.Name = "dtdueDate";
             this.dtdueDate.Size = new System.Drawing.Size(200, 23);
             this.dtdueDate.TabIndex = 22;
+            this.dtdueDate.ValueChanged += new System.EventHandler(this.dtdueDate_ValueChanged);
             // 
             // label12
             // 
@@ -308,7 +310,7 @@
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(102, 38);
             this.btnBorrow.TabIndex = 23;
-            this.btnBorrow.Text = "Borrow";
+            this.btnBorrow.Text = "ISSUE ";
             this.btnBorrow.UseVisualStyleBackColor = false;
             this.btnBorrow.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -326,12 +328,29 @@
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(169)))), ((int)(((byte)(240)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+            this.button2.Location = new System.Drawing.Point(650, 189);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(51, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // FrmAddborrowBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 523);
             this.ControlBox = false;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnBorrow);
             this.Controls.Add(this.dtdueDate);
@@ -361,6 +380,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmAddborrowBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmAddborrowBook_Load);
             this.pnl_top.ResumeLayout(false);
             this.pnl_top.PerformLayout();
@@ -372,30 +392,31 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtbookAssesion;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtbookTitle;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBookDDC;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnl_top;
         private System.Windows.Forms.Label CLOSE;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtStuFullName;
-        private System.Windows.Forms.TextBox txtstuLcNum;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtGrade;
-        private System.Windows.Forms.TextBox txtStuBlock;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dtdateb;
-        private System.Windows.Forms.DateTimePicker dtdueDate;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnBorrow;
         private System.Windows.Forms.Button btnClear;
+        public System.Windows.Forms.TextBox txtbookAssesion;
+        public System.Windows.Forms.TextBox txtbookTitle;
+        public System.Windows.Forms.TextBox txtBookDDC;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox txtStuFullName;
+        public System.Windows.Forms.TextBox txtstuLcNum;
+        public System.Windows.Forms.TextBox txtGrade;
+        public System.Windows.Forms.TextBox txtStuBlock;
+        public System.Windows.Forms.DateTimePicker dtdueDate;
     }
 }

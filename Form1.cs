@@ -121,7 +121,7 @@ namespace eLibrary_System
 
         private void label7_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void kryptnLoginbtn_Click(object sender, EventArgs e)
@@ -153,6 +153,11 @@ namespace eLibrary_System
         {
             frmRecoverAccount newRecover = new frmRecoverAccount();
             newRecover.ShowDialog();
+        }
+
+        private void eLMSTextbox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
